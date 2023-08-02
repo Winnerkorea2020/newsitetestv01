@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSI-PLAY</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/base.css" />
+  </head>
+  <body class="bg-gray-50 overflow-hidden h-screen text-sm text-primary-black">
+    <header class="fixed">
+      <div
+        class="absolute z-50 px-3 xl:px-10 py-2 top-0 left-0 h-16 w-screen flex justify-between items-center"
+      >
+        <!-- Navigation Menu -->
+        <div class="flex items-center">
+          <div class="mr-5">LOGO</div>
+        </div>
+
+        <!-- Navigation Toggle Menu -->
+        <div class="nav__toggle xl:hidden cursor-pointer">
+          <i class="bx bx-menu bx-sm text-gray-500"></i>
+        </div>
+
+        <!-- Navigation Search Box and Sign In / Sign Up Box -->
+        <div
+          class="absolute xl:static top-0 left-0 flex flex-col xl:flex-row items-center justify-between gap-5 xl:gap-10 w-full p-2 rounded-lg"
+        >
+          <!-- button 1 -->
+
+          <div
+            class="relative w-full mt-16 xl:mt-0 px-5 py-5 xl:px-0 xl:py-0 bg-white xl:bg-inherit flex flex-col xl:flex-row items-center justify-end"
+          >
+            <div class="mt-16 xl:mt-0">
+              <ul
+                class="scroll-mt-16 flex flex-col xl:flex-row justify-between items-center gap-8"
+              >
+                <!-- 코인 -->
+                <li class="group inline-block relative">
+                  <button
+                    class="font-semibold inline-flex items-center hover:text-gray-400 w-full justify-center"
+                  >
+                    <span class="mr-1">코인</span>
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="xl:absolute w-full hidden text-gray-700 pt-1 group-hover:block xl:group-hover:border xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40"
+                  >
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-fuchsia-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        코인/김프</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-red-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        시세정보</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-green-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        코인뉴스</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-yellow-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        공시&이벤트</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-blue-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        코인분석</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-pink-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        자유게시판</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- 주식 -->
+                <li class="group inline-block relative">
+                  <button
+                    class="font-semibold inline-flex items-center hover:text-gray-400 w-full justify-center"
+                  >
+                    <span class="mr-1"> 주식</span>
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="xl:absolute w-full hidden text-gray-700 pt-1 group-hover:block xl:group-hover:border xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40"
+                  >
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-fuchsia-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        국내/해외증시</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-red-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        주식뉴스</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-green-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        공시&일정</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-yellow-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        분석</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-pink-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        자유게시판</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- 선물/마진 -->
+                <li class="group inline-block relative">
+                  <button
+                    class="font-semibold inline-flex items-center hover:text-gray-400 w-full justify-center"
+                  >
+                    <span class="mr-1"> 선물/마진</span>
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="xl:absolute w-full hidden text-gray-700 pt-1 group-hover:block xl:group-hover:border xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40"
+                  >
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-fuchsia-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        롱&숏비율</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-red-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        현물/선물 계산기</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <div
+                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-pink-700 text-white rounded-full border"
+                        >
+                          <i class="bx bxs-shield-plus"></i>
+                        </div>
+
+                        자유게시판</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a
+                    class="font-semibold hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    공지사항</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <form
+              class="absolute top-5 left-0 w-full px-5 xl:static xl:w-[30%]"
+            >
+              <label
+                for="search-box"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only"
+                >Search</label
+              >
+              <div class="relative">
+                <div
+                  class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  id="search-box"
+                  class="block w-full p-2.5 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Search..."
+                  required
+                />
+                <button
+                  type="submit"
+                  class="text-white absolute right-1.5 bottom-1.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+            <div class="flex justify-center items-center mt-5 xl:mt-0">
+              <div class="">
+                <div class="flex justify-center items-center gap-5">
+                  <button
+                    class="block w-30 border px-5 py-2.5 rounded-xl text-white font-semibold bg-primary-black hover:bg-primary-black/50"
+                  >
+                    Sign Up
+                  </button>
+                  <button
+                    class="block w-30 border px-5 py-2.5 rounded-xl text-white font-semibold bg-yellow-600 hover:bg-yellow-500"
+                  >
+                    Sign In
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+    <footer>
+      <section c></section>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
