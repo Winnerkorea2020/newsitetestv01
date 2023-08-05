@@ -9,380 +9,1958 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
   </head>
-  <body class="bg-gray-50 overflow-hidden h-screen text-sm text-primary-black">
-    <header class="fixed">
-      <div
-        class="absolute z-50 px-3 xl:px-10 py-2 top-0 left-0 h-16 w-screen flex justify-between items-center"
-      >
-        <!-- Navigation Menu -->
-        <div class="flex items-center">
-          <div class="mr-5">LOGO</div>
-        </div>
+  <body
+    class="bg-gray-200 pt-16 overflow-auto h-screen text-sm text-primary-black"
+  >
+    <header class="bg-white fixed top-0 left-0 w-full px-2 z-50 h-16">
+      <div class="flex justify-between items-center gap-2 h-16">
+        <div class="flex justify-start items-center gap-3 w-full">
+          <!-- Nav Link and Menu -->
+          <!-- Logo Icon -->
+          <a href="#" class="inline-flex justify-start items-center gap-3">
+            <img
+              src="./assets/images/ico-abbc.svg"
+              width="30px"
+              height="30px"
+              alt="CSI-PLay Logo"
+            />
+            <span class="text-sm font-semibold">CSI-PLAY</span>
+          </a>
 
-        <!-- Navigation Toggle Menu -->
-        <div class="nav__toggle xl:hidden cursor-pointer">
-          <i class="bx bx-menu bx-sm text-gray-500"></i>
-        </div>
-
-        <!-- Navigation Search Box and Sign In / Sign Up Box -->
-        <div
-          class="absolute xl:static top-0 left-0 flex flex-col xl:flex-row items-center justify-between gap-5 xl:gap-10 w-full p-2 rounded-lg"
-        >
-          <!-- button 1 -->
-
-          <div
-            class="relative w-full mt-16 xl:mt-0 px-5 py-5 xl:px-0 xl:py-0 bg-white xl:bg-inherit flex flex-col xl:flex-row items-center justify-end"
-          >
-            <div class="mt-16 xl:mt-0">
-              <ul
-                class="scroll-mt-16 flex flex-col xl:flex-row justify-between items-center gap-8"
-              >
-                <!-- 코인 -->
-                <li class="group inline-block relative">
-                  <button
-                    class="font-semibold inline-flex items-center hover:text-gray-400 w-full justify-center"
-                  >
-                    <span class="mr-1">코인</span>
-                    <svg
-                      class="fill-current h-4 w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                      />
-                    </svg>
-                  </button>
-                  <ul
-                    class="xl:absolute w-full hidden text-gray-700 pt-1 group-hover:block xl:group-hover:border xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40"
-                  >
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-fuchsia-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        코인/김프</a
-                      >
-                    </li>
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-red-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        시세정보</a
-                      >
-                    </li>
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-green-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        코인뉴스</a
-                      >
-                    </li>
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-yellow-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        공시&이벤트</a
-                      >
-                    </li>
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-blue-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        코인분석</a
-                      >
-                    </li>
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-pink-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        자유게시판</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <!-- 주식 -->
-                <li class="group inline-block relative">
-                  <button
-                    class="font-semibold inline-flex items-center hover:text-gray-400 w-full justify-center"
-                  >
-                    <span class="mr-1"> 주식</span>
-                    <svg
-                      class="fill-current h-4 w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                      />
-                    </svg>
-                  </button>
-                  <ul
-                    class="xl:absolute w-full hidden text-gray-700 pt-1 group-hover:block xl:group-hover:border xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40"
-                  >
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-fuchsia-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        국내/해외증시</a
-                      >
-                    </li>
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-red-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        주식뉴스</a
-                      >
-                    </li>
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-green-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        공시&일정</a
-                      >
-                    </li>
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-yellow-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        분석</a
-                      >
-                    </li>
-
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-pink-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        자유게시판</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <!-- 선물/마진 -->
-                <li class="group inline-block relative">
-                  <button
-                    class="font-semibold inline-flex items-center hover:text-gray-400 w-full justify-center"
-                  >
-                    <span class="mr-1"> 선물/마진</span>
-                    <svg
-                      class="fill-current h-4 w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                      />
-                    </svg>
-                  </button>
-                  <ul
-                    class="xl:absolute w-full hidden text-gray-700 pt-1 group-hover:block xl:group-hover:border xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40"
-                  >
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-fuchsia-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        롱&숏비율</a
-                      >
-                    </li>
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-red-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        현물/선물 계산기</a
-                      >
-                    </li>
-
-                    <li class="">
-                      <a
-                        class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                        href="#"
-                      >
-                        <div
-                          class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-pink-700 text-white rounded-full border"
-                        >
-                          <i class="bx bxs-shield-plus"></i>
-                        </div>
-
-                        자유게시판</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="">
-                  <a
-                    class="font-semibold hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
-                    href="#"
-                  >
-                    공지사항</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <form
-              class="absolute top-5 left-0 w-full px-5 xl:static xl:w-[30%]"
-            >
-              <label
-                for="search-box"
-                class="mb-2 text-sm font-medium text-gray-900 sr-only"
-                >Search</label
-              >
-              <div class="relative">
-                <div
-                  class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+          <!-- Navi Link -->
+          <div class="ml-8">
+            <ul class="flex justify-between items-center gap-3">
+              <!-- 코인 -->
+              <li class="group inline-block relative">
+                <button
+                  class="font-semibold inline-flex items-center hover:text-gray-400 w-full justify-center"
                 >
+                  <span class="mr-1">코인</span>
                   <svg
-                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                    aria-hidden="true"
+                    class="fill-current h-4 w-4"
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
                     viewBox="0 0 20 20"
                   >
                     <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
                     />
                   </svg>
-                </div>
-                <input
-                  type="search"
-                  id="search-box"
-                  class="block w-full p-2.5 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Search..."
-                  required
-                />
-                <button
-                  type="submit"
-                  class="text-white absolute right-1.5 bottom-1.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1"
-                >
-                  Search
                 </button>
-              </div>
-            </form>
-            <div class="flex justify-center items-center mt-5 xl:mt-0">
-              <div class="">
-                <div class="flex justify-center items-center gap-5">
-                  <button
-                    class="block w-30 border px-5 py-2.5 rounded-xl text-white font-semibold bg-primary-black hover:bg-primary-black/50"
+                <ul
+                  class="bg-white xl:absolute w-full hidden text-gray-700 pt-1 group-hover:block xl:group-hover:border xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40"
+                >
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-fuchsia-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      코인/김프</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-red-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      시세정보</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-green-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      코인뉴스</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-yellow-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      공시&이벤트</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-blue-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      코인분석</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-pink-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      자유게시판</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- 주식 -->
+              <li class="group inline-block relative">
+                <button
+                  class="font-semibold inline-flex items-center hover:text-gray-400 w-full justify-center"
+                >
+                  <span class="mr-1"> 주식</span>
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
                   >
-                    Sign Up
-                  </button>
-                  <button
-                    class="block w-30 border px-5 py-2.5 rounded-xl text-white font-semibold bg-yellow-600 hover:bg-yellow-500"
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <ul
+                  class="bg-white xl:absolute w-full hidden text-gray-700 pt-1 group-hover:block xl:group-hover:border xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40"
+                >
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-fuchsia-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      국내/해외증시</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-red-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      주식뉴스</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-green-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      공시&일정</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-yellow-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      분석</a
+                    >
+                  </li>
+
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-pink-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      자유게시판</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- 선물/마진 -->
+              <li class="group inline-block relative">
+                <button
+                  class="font-semibold inline-flex items-center hover:text-gray-400 w-full justify-center"
+                >
+                  <span class="mr-1"> 선물/마진</span>
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
                   >
-                    Sign In
-                  </button>
-                </div>
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <ul
+                  class="bg-white xl:absolute w-full hidden text-gray-700 pt-1 group-hover:block xl:group-hover:border xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40"
+                >
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-fuchsia-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      롱&숏비율</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-red-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      현물/선물 계산기</a
+                    >
+                  </li>
+
+                  <li class="">
+                    <a
+                      class="hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      <div
+                        class="mr-1 w-6 h-6 inline-flex items-center justify-center bg-pink-700 text-white rounded-full border"
+                      >
+                        <i class="bx bxs-shield-plus"></i>
+                      </div>
+
+                      자유게시판</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="">
+                <a
+                  class="font-semibold hover:text-yellow-600 hover:font-semibold py-2 pl-2 pr-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  공지사항</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Serach Form & Login and Sign Up Form -->
+        <div class="flex justify-end items-center w-full">
+          <form class="w-[50%] mr-3">
+            <label
+              for="search-box"
+              class="mb-2 text-sm font-medium text-gray-900 sr-only"
+              >Search</label
+            >
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
               </div>
+              <input
+                type="search"
+                id="search-box"
+                class="block w-full p-2.5 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Search..."
+                required
+              />
+              <button
+                type="submit"
+                class="text-white absolute right-1.5 bottom-1.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1.5"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+          <!-- Button  -->
+          <div class="">
+            <div class="flex justify-center items-center gap-2">
+              <button
+                class="block w-30 border px-5 py-2.5 rounded-xl text-white font-semibold bg-primary-black hover:bg-primary-black/50"
+              >
+                Sign Up
+              </button>
+              <button
+                class="block w-30 border px-5 py-2.5 rounded-xl text-white font-semibold bg-yellow-600 hover:bg-yellow-500"
+              >
+                Sign In
+              </button>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <section></section>
-      <section></section>
-      <section></section>
+    <main class="mt-3">
+      <!-- Ticker -->
+      <section class="w-full bg-white px-2">
+        <div class="py-2 flex items-center relative h-10">
+          <div
+            class="font-semibold pr-3 absolute z-50 top-0 left-0 h-10 text-center flex items-center justify-center"
+          >
+            Ticker!
+          </div>
+          <div class="ml-16 flex justify-start items-center gap-5">
+            <a href="#" class="flex justify-start items-center">
+              <img
+                src="./assets/images/ico-bethumb-lg.svg"
+                alt=""
+                width="20px"
+                height="20px"
+                class="mr-1"
+              />
+              <span class="py-2 font-medium text-sm"
+                >Lore m ipsum, dolor s</span
+              >
+            </a>
+
+            <a href="#" class="flex justify-start items-center">
+              <img
+                src="./assets/images/ico-bethumb-lg.svg"
+                alt=""
+                width="20px"
+                height="20px"
+                class="mr-1"
+              />
+              <span class="py-2 font-medium text-sm"
+                >Lore m ipsum, dolor s</span
+              >
+            </a>
+
+            <a href="#" class="flex justify-start items-center">
+              <img
+                src="./assets/images/ico-bethumb-lg.svg"
+                alt=""
+                width="20px"
+                height="20px"
+                class="mr-1"
+              />
+              <span class="py-2 font-medium text-sm"
+                >Lore m ipsum, dolor s</span
+              >
+            </a>
+
+            <a href="#" class="flex justify-start items-center">
+              <img
+                src="./assets/images/ico-bethumb-lg.svg"
+                alt=""
+                width="20px"
+                height="20px"
+                class="mr-1"
+              />
+              <span class="py-2 font-medium text-sm"
+                >Lore m ipsum, dolor s</span
+              >
+            </a>
+
+            <a href="#" class="flex justify-start items-center">
+              <img
+                src="./assets/images/ico-bethumb-lg.svg"
+                alt=""
+                width="20px"
+                height="20px"
+                class="mr-1"
+              />
+              <span class="py-2 font-medium text-sm"
+                >Lore m ipsum, dolor s</span
+              >
+            </a>
+
+            <a href="#" class="flex justify-start items-center">
+              <img
+                src="./assets/images/ico-bethumb-lg.svg"
+                alt=""
+                width="20px"
+                height="20px"
+                class="mr-1"
+              />
+              <span class="py-2 font-medium text-sm"
+                >Lore m ipsum, dolor s</span
+              >
+            </a>
+
+            <a href="#" class="flex justify-start items-center">
+              <img
+                src="./assets/images/ico-bethumb-lg.svg"
+                alt=""
+                width="20px"
+                height="20px"
+                class="mr-1"
+              />
+              <span class="py-2 font-medium text-sm"
+                >Lore m ipsum, dolor s</span
+              >
+            </a>
+            <a href="#" class="flex justify-start items-center">
+              <img
+                src="./assets/images/ico-bethumb-lg.svg"
+                alt=""
+                width="20px"
+                height="20px"
+                class="mr-1"
+              />
+              <span class="py-2 font-medium text-sm"
+                >Lore m ipsum, dolor s</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="mt-3">
+        <div class="grid grid-cols-12 gap-2">
+          <!-- Right Area -->
+          <div class="col-span-9">
+            <!-- Right Area 1 -->
+            <div class="grid grid-cols-12 relative gap-3">
+              <div class="col-span-9 bg-white h-48 px-5 py-3">
+                <h2 class="head_text font-semibold text-xl">선물계산기</h2>
+                <div></div>
+              </div>
+              <div class="col-span-3 bg-white px-5 py-3">
+                <h2 class="head_text font-semibold text-xl">Fear&Grid Rate</h2>
+                <div></div>
+              </div>
+            </div>
+            <!-- Right Area 2 -->
+            <div class="grid grid-cols-12 px-2 mt-3 relative">
+              <!-- Banner -->
+              <div
+                class="col-span-12 h-20 bg-gray-950 w-full text-white flex justify-center items-center"
+              >
+                <span class="font-semibold text-xl">Banner</span>
+              </div>
+            </div>
+            <!-- Right Area 3 -->
+            <div class="grid grid-cols-12 gap-3 px-2 mt-3">
+              <div class="col-span-6 bg-white">
+                <div>
+                  <div
+                    class="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1"
+                  >
+                    <h4
+                      class="mb-6 text-xl font-bold text-black dark:text-white"
+                    >
+                      Top Channels
+                    </h4>
+
+                    <div class="flex flex-col">
+                      <div
+                        class="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5"
+                      >
+                        <div class="p-2.5 xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Source
+                          </h5>
+                        </div>
+                        <div class="p-2.5 text-center xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Visitors
+                          </h5>
+                        </div>
+                        <div class="p-2.5 text-center xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Revenues
+                          </h5>
+                        </div>
+                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Sales
+                          </h5>
+                        </div>
+                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Conversion
+                          </h5>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-01.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Google
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            3.5K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$5,768</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            590
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">4.8%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-02.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="font-medium hidden text-black dark:text-white sm:block"
+                          >
+                            Twitter
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            2.2K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$4,635</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            467
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">4.3%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-03.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Github
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            2.1K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$4,290</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            420
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">3.7%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-04.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Vimeo
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            1.5K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$3,580</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            389
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">2.5%</p>
+                        </div>
+                      </div>
+
+                      <div class="grid grid-cols-3 sm:grid-cols-5">
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-05.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Facebook
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            1.2K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$2,740</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            230
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">1.9%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-6 bg-white">
+                <div>
+                  <div
+                    class="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1"
+                  >
+                    <h4
+                      class="mb-6 text-xl font-bold text-black dark:text-white"
+                    >
+                      Top Channels
+                    </h4>
+
+                    <div class="flex flex-col">
+                      <div
+                        class="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5"
+                      >
+                        <div class="p-2.5 xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Source
+                          </h5>
+                        </div>
+                        <div class="p-2.5 text-center xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Visitors
+                          </h5>
+                        </div>
+                        <div class="p-2.5 text-center xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Revenues
+                          </h5>
+                        </div>
+                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Sales
+                          </h5>
+                        </div>
+                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Conversion
+                          </h5>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-01.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Google
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            3.5K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$5,768</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            590
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">4.8%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-02.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="font-medium hidden text-black dark:text-white sm:block"
+                          >
+                            Twitter
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            2.2K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$4,635</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            467
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">4.3%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-03.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Github
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            2.1K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$4,290</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            420
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">3.7%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-04.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Vimeo
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            1.5K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$3,580</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            389
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">2.5%</p>
+                        </div>
+                      </div>
+
+                      <div class="grid grid-cols-3 sm:grid-cols-5">
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-05.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Facebook
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            1.2K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$2,740</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            230
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">1.9%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Area 4 -->
+            <div class="grid grid-cols-12 gap-3 px-2 mt-3">
+              <div class="col-span-6 bg-white">
+                <div>
+                  <div
+                    class="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1"
+                  >
+                    <h4
+                      class="mb-6 text-xl font-bold text-black dark:text-white"
+                    >
+                      Top Channels
+                    </h4>
+
+                    <div class="flex flex-col">
+                      <div
+                        class="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5"
+                      >
+                        <div class="p-2.5 xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Source
+                          </h5>
+                        </div>
+                        <div class="p-2.5 text-center xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Visitors
+                          </h5>
+                        </div>
+                        <div class="p-2.5 text-center xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Revenues
+                          </h5>
+                        </div>
+                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Sales
+                          </h5>
+                        </div>
+                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Conversion
+                          </h5>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-01.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Google
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            3.5K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$5,768</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            590
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">4.8%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-02.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="font-medium hidden text-black dark:text-white sm:block"
+                          >
+                            Twitter
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            2.2K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$4,635</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            467
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">4.3%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-03.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Github
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            2.1K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$4,290</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            420
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">3.7%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-04.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Vimeo
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            1.5K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$3,580</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            389
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">2.5%</p>
+                        </div>
+                      </div>
+
+                      <div class="grid grid-cols-3 sm:grid-cols-5">
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-05.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Facebook
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            1.2K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$2,740</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            230
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">1.9%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-6 bg-white">
+                <div>
+                  <div
+                    class="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1"
+                  >
+                    <h4
+                      class="mb-6 text-xl font-bold text-black dark:text-white"
+                    >
+                      Top Channels
+                    </h4>
+
+                    <div class="flex flex-col">
+                      <div
+                        class="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5"
+                      >
+                        <div class="p-2.5 xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Source
+                          </h5>
+                        </div>
+                        <div class="p-2.5 text-center xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Visitors
+                          </h5>
+                        </div>
+                        <div class="p-2.5 text-center xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Revenues
+                          </h5>
+                        </div>
+                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Sales
+                          </h5>
+                        </div>
+                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
+                          <h5
+                            class="text-sm font-medium uppercase xsm:text-base"
+                          >
+                            Conversion
+                          </h5>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-01.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Google
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            3.5K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$5,768</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            590
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">4.8%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-02.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="font-medium hidden text-black dark:text-white sm:block"
+                          >
+                            Twitter
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            2.2K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$4,635</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            467
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">4.3%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-03.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Github
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            2.1K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$4,290</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            420
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">3.7%</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+                      >
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-04.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Vimeo
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            1.5K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$3,580</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            389
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">2.5%</p>
+                        </div>
+                      </div>
+
+                      <div class="grid grid-cols-3 sm:grid-cols-5">
+                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                          <div class="flex-shrink-0">
+                            <img
+                              src="./images/brand/brand-05.svg"
+                              alt="Brand"
+                            />
+                          </div>
+                          <p
+                            class="hidden font-medium text-black dark:text-white sm:block"
+                          >
+                            Facebook
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            1.2K
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-center p-2.5 xl:p-5"
+                        >
+                          <p class="font-medium text-meta-3">$2,740</p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-black dark:text-white">
+                            230
+                          </p>
+                        </div>
+
+                        <div
+                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
+                        >
+                          <p class="font-medium text-meta-5">1.9%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Left Area -->
+          <div class="col-span-3 bg-white h-full">
+            <div class="px-3 py-8 mx-auto w-full">
+              <div class="">
+                <div class="grid grid-cols-6 gap-6">
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+
+                  <div class="">
+                    <a href="" class="">
+                      <img
+                        src="./assets/images/ico-bethumb-lg.svg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        class="border rounded-full"
+                      />
+                      <div class="w-full text-center">xxxx</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="bg-gray-50 dark:bg-gray-900">
+                <div
+                  class="flex flex-col items-center justify-center px-6 py-8 mx-auto"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center mb-6 text-2xl font-semibold text-gray-900"
+                  >
+                    <img
+                      class="w-8 h-8 mr-2"
+                      src="./assets/images/ico-longshort.svg"
+                      alt="logo"
+                    />
+                    CSI-Play
+                  </a>
+                  <div
+                    class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0"
+                  >
+                    <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                      <h1
+                        class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white"
+                      >
+                        Sign in to your account
+                      </h1>
+                      <form class="space-y-4 md:space-y-6" action="#">
+                        <div>
+                          <label
+                            for="email"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >Your email</label
+                          >
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="name@company.com"
+                            required=""
+                          />
+                        </div>
+                        <div>
+                          <label
+                            for="password"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="••••••••"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                            required=""
+                          />
+                        </div>
+                        <div class="flex items-center justify-between">
+                          <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                              <input
+                                id="remember"
+                                aria-describedby="remember"
+                                type="checkbox"
+                                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300"
+                                required=""
+                              />
+                            </div>
+                            <div class="ml-3 text-sm">
+                              <label for="remember" class="text-gray-500"
+                                >Remember me</label
+                              >
+                            </div>
+                          </div>
+                          <a
+                            href="#"
+                            class="text-sm font-medium text-gray-600 hover:underline"
+                            >Forgot password?</a
+                          >
+                        </div>
+                        <button
+                          type="submit"
+                          class="w-full text-white bg-gray-600 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                        >
+                          Sign in
+                        </button>
+                        <p class="text-sm font-light text-gray-500">
+                          Don’t have an account yet?
+                          <a
+                            href="#"
+                            class="font-medium text-gray-600 hover:underline"
+                            >Sign up</a
+                          >
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section></section>
     </main>
-    <footer>
-      <section c></section>
+
+    <footer class="bg-white w-full mt-3">
+      <div class="w-full p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center mb-4 sm:mb-0"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8 mr-3"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Flowbite</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023
+          <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>.
+          All Rights Reserved.</span
+        >
+      </div>
     </footer>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
