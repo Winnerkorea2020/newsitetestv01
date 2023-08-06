@@ -481,23 +481,12 @@
           </div>
         </div>
       </section>
-      <section class="mt-3">
+      <section class="mt-3 px-2">
         <div class="grid grid-cols-12 gap-2">
           <!-- Right Area -->
           <div class="col-span-9">
-            <!-- Right Area 1 -->
-            <div class="grid grid-cols-12 relative gap-3">
-              <div class="col-span-9 bg-white h-48 px-5 py-3">
-                <h2 class="head_text font-semibold text-xl">선물계산기</h2>
-                <div></div>
-              </div>
-              <div class="col-span-3 bg-white px-5 py-3">
-                <h2 class="head_text font-semibold text-xl">Fear&Grid Rate</h2>
-                <div></div>
-              </div>
-            </div>
-            <!-- Right Area 2 -->
-            <div class="grid grid-cols-12 px-2 mt-3 relative">
+            <!-- Right Area Banner -->
+            <div class="grid grid-cols-12 relative">
               <!-- Banner -->
               <div
                 class="col-span-12 h-20 bg-gray-950 w-full text-white flex justify-center items-center"
@@ -505,8 +494,125 @@
                 <span class="font-semibold text-xl">Banner</span>
               </div>
             </div>
-            <!-- Right Area 3 -->
-            <div class="grid grid-cols-12 gap-3 px-2 mt-3">
+            <!-- Right Area 1 -->
+            <div class="grid grid-cols-12 mt-3 relative gap-3">
+              <div class="col-span-9 bg-white px-5 py-3">
+                <h2 class="head_text font-semibold text-xl">
+                  김치프리미엄 실시간 시세조회
+                </h2>
+
+                <div class="mt-3">
+                  <div class="flex justify-start items-center gap-10">
+                    <div class="inline-flex items-center gap-3">
+                      <img
+                        src="./assets/images/ico-bitcoin.svg"
+                        alt=""
+                        width="30px"
+                        height="30px"
+                      />
+                      <select
+                        id="select0"
+                        class="border px-2 py-1.5 rounded-lg"
+                      >
+                        <option value="">비트코인(BTC)</option>
+                      </select>
+                    </div>
+                    <div class="">
+                      <dl class="flex justify-between items-center gap-3">
+                        <dt class="font-medium text-base">등락</dt>
+                        <dd class="ml-4 font-semibold">
+                          <span class="text-red-500">-2.33%</span>
+                        </dd>
+                        <dt class="font-medium text-base">거래대금</dt>
+                        <dd class="ml-4 font-semibold">
+                          <span class="text-blue-500">2,333억</span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+
+                  <!-- 김치프라임 계산기 -->
+                  <div
+                    class="flex justify-between items-center gap-3 mt-3 tracking-tighter"
+                  >
+                    <div
+                      class="w-full rounded-lg border border-gray-300 shadow shadow-gray-200 px-3 py-2.5"
+                    >
+                      <!-- 코인 게산 하나 -->
+                      <div class="">
+                        <div class="flex justify-between items-center">
+                          <div class="flex justify-start items-center gap-2">
+                            <img
+                              src="./assets/images/ico-upbit.svg"
+                              alt=""
+                              width="25px"
+                              height="25px"
+                            />
+                            <span class="font-medium">업비트</span>
+                          </div>
+                          <span class="block text-lg font-medium"
+                            >22,389,123 원</span
+                          >
+                        </div>
+                        <div class="w-full text-end">
+                          <p class="">17,516,08 $</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 코인 게산 함수 -->
+                    <div class="">
+                      <span class="text-3xl">-</span>
+                    </div>
+                    <!-- 코닌 게산 둘 -->
+
+                    <div
+                      class="w-full rounded-lg border border-gray-300 shadow shadow-gray-200 px-3 py-2.5"
+                    >
+                      <div>
+                        <div class="flex justify-between items-center">
+                          <div class="flex justify-start items-center gap-3">
+                            <img src="./assets/images/ico-binance.svg" alt="" />
+                            <span class="text-lg font-medium">바이낸스</span>
+                          </div>
+                          <span class="block text-lg font-medium"
+                            >22,389,123 원</span
+                          >
+                        </div>
+                      </div>
+                      <div class="w-full text-end">
+                        <p class="">17,516,08 $</p>
+                      </div>
+                    </div>
+                    <!-- 코인 게산 함수 -->
+                    <div class="">
+                      <span class="text-3xl">=</span>
+                    </div>
+                    <!-- 코인 게산 합계 -->
+
+                    <div
+                      class="w-full rounded-lg border border-red-300 shadow shadow-gray-200 px-3 py-2.5"
+                    >
+                      <div class="flex justify-end items-center">
+                        <div class="flex justify-between items-center gap-3">
+                          <div class="font-bold text-red-500">김치프리미엄</div>
+                          <div class="text-blue-500 font-semibold">+2.18 %</div>
+                        </div>
+                      </div>
+                      <div class="w-full">
+                        <p class="text-end font-bold text-xl">+ 476,785</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-3 bg-white px-5 py-3">
+                <h2 class="head_text font-semibold text-xl">Fear&Grid Rate</h2>
+                <div></div>
+              </div>
+            </div>
+
+            <!-- Right Area 2 -->
+            <div class="grid grid-cols-12 gap-3 mt-3">
               <div class="col-span-6 bg-white">
                 <div>
                   <div
@@ -515,7 +621,7 @@
                     <h4
                       class="mb-6 text-xl font-bold text-black dark:text-white"
                     >
-                      Top Channels
+                      통화청산
                     </h4>
 
                     <div class="flex flex-col">
@@ -1074,8 +1180,8 @@
                 </div>
               </div>
             </div>
-            <!-- Right Area 4 -->
-            <div class="grid grid-cols-12 gap-3 px-2 mt-3">
+            <!-- Right Area 3 -->
+            <div class="grid grid-cols-12 gap-3 mt-3">
               <div class="col-span-6 bg-white">
                 <div>
                   <div
@@ -1084,7 +1190,7 @@
                     <h4
                       class="mb-6 text-xl font-bold text-black dark:text-white"
                     >
-                      Top Channels
+                      BEST 코인 시세정보
                     </h4>
 
                     <div class="flex flex-col">
@@ -1367,7 +1473,7 @@
                     <h4
                       class="mb-6 text-xl font-bold text-black dark:text-white"
                     >
-                      Top Channels
+                      거래소 청산
                     </h4>
 
                     <div class="flex flex-col">
@@ -1639,6 +1745,242 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Area 4 : 공지사항 -->
+            <div class="grid grid-cols-12 mt-3 relative">
+              <!-- Banner -->
+              <div class="col-span-12 bg-white">
+                <div
+                  class="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1"
+                >
+                  <h4 class="mb-6 text-xl font-bold text-black dark:text-white">
+                    공지사항
+                  </h4>
+                  <div class="relative overflow-x-auto">
+                    <table
+                      class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+                    >
+                      <thead
+                        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+                      >
+                        <tr>
+                          <th scope="col" class="p-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-all"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label for="checkbox-all" class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </th>
+                          <th scope="col" class="px-6 py-3">Product name</th>
+                          <th scope="col" class="px-6 py-3">Color</th>
+                          <th scope="col" class="px-6 py-3">Category</th>
+                          <th scope="col" class="px-6 py-3">Price</th>
+                          <th scope="col" class="px-6 py-3">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr
+                          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                        >
+                          <td class="w-4 p-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-table-1"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label for="checkbox-table-1" class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </td>
+                          <th
+                            scope="row"
+                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            Apple MacBook Pro 17"
+                          </th>
+                          <td class="px-6 py-4">Silver</td>
+                          <td class="px-6 py-4">Laptop</td>
+                          <td class="px-6 py-4">$2999</td>
+                          <td class="px-6 py-4">
+                            <a
+                              href="#"
+                              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                              >Edit</a
+                            >
+                          </td>
+                        </tr>
+                        <tr
+                          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                        >
+                          <td class="w-4 p-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-table-2"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label for="checkbox-table-2" class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </td>
+                          <th
+                            scope="row"
+                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            Microsoft Surface Pro
+                          </th>
+                          <td class="px-6 py-4">White</td>
+                          <td class="px-6 py-4">Laptop PC</td>
+                          <td class="px-6 py-4">$1999</td>
+                          <td class="px-6 py-4">
+                            <a
+                              href="#"
+                              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                              >Edit</a
+                            >
+                          </td>
+                        </tr>
+                        <tr
+                          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                        >
+                          <td class="w-4 p-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-table-3"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label for="checkbox-table-3" class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </td>
+                          <th
+                            scope="row"
+                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            Magic Mouse 2
+                          </th>
+                          <td class="px-6 py-4">Black</td>
+                          <td class="px-6 py-4">Accessories</td>
+                          <td class="px-6 py-4">$99</td>
+                          <td class="px-6 py-4">
+                            <a
+                              href="#"
+                              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                              >Edit</a
+                            >
+                          </td>
+                        </tr>
+                        <tr
+                          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                        >
+                          <td class="w-4 p-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-table-3"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label for="checkbox-table-3" class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </td>
+                          <th
+                            scope="row"
+                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            Apple Watch
+                          </th>
+                          <td class="px-6 py-4">Silver</td>
+                          <td class="px-6 py-4">Accessories</td>
+                          <td class="px-6 py-4">$179</td>
+                          <td class="px-6 py-4">
+                            <a
+                              href="#"
+                              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                              >Edit</a
+                            >
+                          </td>
+                        </tr>
+                        <tr
+                          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                        >
+                          <td class="w-4 p-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-table-3"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label for="checkbox-table-3" class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </td>
+                          <th
+                            scope="row"
+                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            iPad
+                          </th>
+                          <td class="px-6 py-4">Gold</td>
+                          <td class="px-6 py-4">Tablet</td>
+                          <td class="px-6 py-4">$699</td>
+                          <td class="px-6 py-4">
+                            <a
+                              href="#"
+                              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                              >Edit</a
+                            >
+                          </td>
+                        </tr>
+                        <tr
+                          class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600"
+                        >
+                          <td class="w-4 p-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-table-3"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label for="checkbox-table-3" class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </td>
+                          <th
+                            scope="row"
+                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            Apple iMac 27"
+                          </th>
+                          <td class="px-6 py-4">Silver</td>
+                          <td class="px-6 py-4">PC Desktop</td>
+                          <td class="px-6 py-4">$3999</td>
+                          <td class="px-6 py-4">
+                            <a
+                              href="#"
+                              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                              >Edit</a
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -1807,6 +2149,7 @@
                 </div>
               </div>
             </div>
+            <!-- Sign In/ Sign Up -->
             <div>
               <div class="bg-gray-50 dark:bg-gray-900">
                 <div
@@ -1906,6 +2249,275 @@
                 </div>
               </div>
             </div>
+            <!-- Top Coin List -->
+            <div>
+              <div class="bg-gray-50 px-6">
+                <!-- wrap-soar-list -->
+                <div class="w-full bg-white rounded-lg shadow">
+                  <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-col items-center justify-center mt-5">
+                      <img
+                        src="./assets/images/ico-upbit.svg"
+                        alt=""
+                        width="50px"
+                        height="50px"
+                      />
+                      <h3 class="text-lg font-semibold">
+                        <span> 급상승 10코인 </span>
+                      </h3>
+                    </div>
+                    <div class="w-full px-6 mt-5">
+                      <div
+                        class="flex justify-between items-center gap-2 w-full"
+                      >
+                        <div class="w-full">
+                          <button
+                            type="button"
+                            class="w-full border rounded border-orange-300 active"
+                          >
+                            1주일
+                          </button>
+                        </div>
+                        <div class="w-full">
+                          <button
+                            type="button"
+                            class="w-full border rounded border-orange-300"
+                          >
+                            1개월
+                          </button>
+                        </div>
+                        <div class="w-full">
+                          <button
+                            type="button"
+                            class="w-full border rounded border-orange-300"
+                          >
+                            6개월
+                          </button>
+                        </div>
+                        <div class="w-full">
+                          <button
+                            type="button"
+                            class="w-full border rounded border-orange-300"
+                          >
+                            1년
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="w-full h-full overflow-y-auto overscroll-y-auto scroll"
+                    >
+                      <ul class="w-full h-full px-6 mt-5 flex flex-col gap-6">
+                        <li class="">
+                          <a href="#none" class="">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                              >
+                                <i class="x20-ico">
+                                  <img
+                                    src="./assets/images/ico-mcg.svg"
+                                    alt=""
+                                  />
+                                </i>
+                                <span class="text-base font-medium">MCG</span>
+                              </span>
+                              <span class="font-medium">
+                                <span class="text-red-500">+15.54%</span>
+                              </span>
+                            </div>
+                            <p class="font-medium">
+                              마이크로체인 거버넌스 토큰
+                            </p>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#none" class="link-soar-list">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                                ><i class="x20-ico"
+                                  ><img
+                                    src="./assets/images/ico-super.svg"
+                                    alt="" /></i
+                                ><span class="text-base font-medium"
+                                  >SUPER</span
+                                ></span
+                              >
+                              <span class="font-medium"
+                                ><span class="text-red-500">+15.54%</span></span
+                              >
+                            </div>
+                            <p class="soar-list-items-title">슈퍼팜</p>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#none" class="link-soar-list">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                                ><i class="x20-ico"
+                                  ><img
+                                    src="./assets/images/ico-prx.svg"
+                                    alt="" /></i
+                                ><span class="text-base font-medium"
+                                  >PRX</span
+                                ></span
+                              >
+                              <span class="font-medium"
+                                ><span class="text-red-500">+15.54%</span></span
+                              >
+                            </div>
+                            <p class="soar-list-items-title">파렉스</p>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#none" class="link-soar-list">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                                ><i class="x20-ico"
+                                  ><img
+                                    src="./assets/images/ico-abbc.svg"
+                                    alt="" /></i
+                                ><span class="text-base font-medium"
+                                  >ABBC</span
+                                ></span
+                              >
+                              <span class="font-medium"
+                                ><span class="text-red-500">+15.54%</span></span
+                              >
+                            </div>
+                            <p class="soar-list-items-title">알리바바코인</p>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#none" class="link-soar-list">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                                ><i class="x20-ico"
+                                  ><img
+                                    src="./assets/images/ico-trr.svg"
+                                    alt="" /></i
+                                ><span class="text-base font-medium"
+                                  >TRR</span
+                                ></span
+                              >
+                              <span class="font-medium"
+                                ><span class="text-red-500">+15.54%</span></span
+                              >
+                            </div>
+                            <p class="soar-list-items-title">테란코인</p>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#none" class="link-soar-list">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                                ><i class="x20-ico"
+                                  ><img
+                                    src="./assets/images/ico-band.svg"
+                                    alt="" /></i
+                                ><span class="text-base font-medium"
+                                  >BAND</span
+                                ></span
+                              >
+                              <span class="font-medium"
+                                ><span class="text-red-500">+15.54%</span></span
+                              >
+                            </div>
+                            <p class="soar-list-items-title">밴드 프로토콜</p>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#none" class="link-soar-list">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                                ><i class="x20-ico"
+                                  ><img
+                                    src="./assets/images/ico-utk.svg"
+                                    alt="" /></i
+                                ><span class="text-base font-medium"
+                                  >UTK</span
+                                ></span
+                              >
+                              <span class="font-medium"
+                                ><span class="text-red-500">+15.54%</span></span
+                              >
+                            </div>
+                            <p class="soar-list-items-title">유트러스트</p>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#none" class="link-soar-list">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                                ><i class="x20-ico"
+                                  ><img
+                                    src="./assets/images/ico-c98.svg"
+                                    alt="" /></i
+                                ><span class="text-base font-medium"
+                                  >C98</span
+                                ></span
+                              >
+                              <span class="font-medium"
+                                ><span class="text-red-500">+15.54%</span></span
+                              >
+                            </div>
+                            <p class="soar-list-items-title">코인구팔</p>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#none" class="link-soar-list">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                                ><i class="x20-ico"
+                                  ><img
+                                    src="./assets/images/ico-pci.svg"
+                                    alt="" /></i
+                                ><span class="text-base font-medium"
+                                  >PCI</span
+                                ></span
+                              >
+                              <span class="font-medium"
+                                ><span class="text-red-500">+15.54%</span></span
+                              >
+                            </div>
+                            <p class="soar-list-items-title">페이코인</p>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#none" class="link-soar-list">
+                            <div class="flex gap-2">
+                              <span
+                                class="flex justify-start items-center gap-2 w-full"
+                                ><i class="x20-ico"
+                                  ><img
+                                    src="./assets/images/ico-nu.svg"
+                                    alt="" /></i
+                                ><span class="text-base font-medium"
+                                  >NU</span
+                                ></span
+                              >
+                              <span class="font-medium"
+                                ><span class="text-red-500">+15.54%</span></span
+                              >
+                            </div>
+                            <p class="soar-list-items-title">누사이퍼</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- //wrap-soar-list -->
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1916,18 +2528,11 @@
     <footer class="bg-white w-full mt-3">
       <div class="w-full p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://flowbite.com/"
-            class="flex items-center mb-4 sm:mb-0"
-          >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8 mr-3"
-              alt="Flowbite Logo"
-            />
+          <a href="#" class="flex items-center mb-4 sm:mb-0">
+            <img src="#" class="h-8 mr-3" alt="CSI-Play Logo" />
             <span
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-              >Flowbite</span
+              >CSI-Play</span
             >
           </a>
           <ul
@@ -1955,7 +2560,7 @@
         <span
           class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
           >© 2023
-          <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>.
+          <a href="https://CSI-Play.com/" class="hover:underline">CSI-Play™</a>.
           All Rights Reserved.</span
         >
       </div>
