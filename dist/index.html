@@ -1087,12 +1087,66 @@
                 <div class="grid grid-cols-1 gap-2">
                   <div class="px-5 py-3 bg-white rounded-lg">
                     <div class="mt-3">
-                      <img src="./assets/images/others/fig1.png" alt="" />
+                      <div
+                        id="ww_9563561bd48f1"
+                        v="1.3"
+                        loc="id"
+                        a='{"t":"responsive","lang":"ko","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'
+                      >
+                        Weather Data Source:
+                        <a
+                          href="https://wetterlabs.de/wetter_busan/woche/"
+                          id="ww_9563561bd48f1_u"
+                          target="_blank"
+                          >wetter 7 tage</a
+                        >
+                      </div>
+                      <script
+                        async
+                        src="https://app2.weatherwidget.org/js/?id=ww_9563561bd48f1"
+                      ></script>
                     </div>
                     <div></div>
                   </div>
                   <div class="px-5 py-3 bg-white rounded-lg">
-                    <div class="mt-3"></div>
+                    <div class="mt-3">
+                      <!-- Please do not edit this code Mconvert currency-rates-widget starts here -->
+                      <script type="text/javascript">
+                        var w = "100%";
+                        var h = "349";
+                        var b = "usd";
+                        var a = "1";
+                        var l = "ko";
+                        var t = "blue";
+                        var c = "aud,cad,cny,eur,krw,btc,chf";
+                        var ty = "1";
+                        var f = "2";
+                        var ht = "mconvert.net/";
+                      </script>
+                      <a
+                        href="https://mconvert.net/"
+                        title="Currency Exchange Rates"
+                        ><script src="//mconvert.net/currency_rates"></script></a
+                      ><span
+                        style="
+                          margin-right: 10px;
+                          font-size: 11px;
+                          text-align: right;
+                          display: block;
+                          font-family: Helvetica Neue;
+                        "
+                        ><a
+                          href="https://mconvert.net/"
+                          style="
+                            color: #337ab7;
+                            text-decoration: none;
+                            font-family: Helvetica Neue;
+                          "
+                          >환율 계산기</a
+                        >
+                        by mconvert.net</span
+                      ><!-- Mconvert currency rates widget ends here -->
+                    </div>
                     <div></div>
                   </div>
                 </div>
@@ -1379,20 +1433,13 @@
                 </div>
               </div>
               <div class="col-span-4 bg-white px-5 py-3 rounded-lg">
-                <h2 class="font-semibold text-xl">Fear&Greed Rate</h2>
                 <div class="mt-5">
                   <div
                     class="w-full flex flex-col justify-center items-center gap-y-3 border shadow rounded-lg"
                   >
                     <img
-                      src="./assets/images/others/cnn_fear_greed_index.PNG"
-                      alt=""
-                      class="w-fit p-3"
-                    />
-                    <img
-                      src="./assets/images/others/cnn_fear_greed_index-2.PNG"
-                      alt=""
-                      class="w-fit p-3"
+                      src="https://alternative.me/crypto/fear-and-greed-index.png"
+                      alt="Latest Crypto Fear & Greed Index"
                     />
                   </div>
                 </div>
@@ -3158,43 +3205,85 @@
       <section></section>
     </main>
 
-    <footer class="bg-white w-full mt-3">
-      <div class="w-full p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <a href="#" class="flex items-center mb-4 sm:mb-0">
-            <img
-              src="./assets/images/ico-abbc.svg"
-              class="h-8 mr-3"
-              alt="CSI-Play Logo"
-            />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap"
-              >CSI-Play</span
-            >
-          </a>
-          <ul
-            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0"
-          >
-            <li>
-              <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
-            </li>
-            <li>
-              <a href="#" class="mr-4 hover:underline md:mr-6"
-                >Privacy Policy</a
+    <footer class="mt-2 bg-white">
+      <div class="w-full mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between px-8">
+          <div class="flex justify-start items-start gap-2">
+            <a href="#" class="flex items-center mb-4 sm:mb-0">
+              <img
+                src="./assets/images/ico-abbc.svg"
+                class="h-8 mr-3"
+                alt="Flowbite Logo"
+              />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap"
+                >CSI-PLAY</span
               >
-            </li>
-            <li>
-              <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Contact</a>
-            </li>
-          </ul>
+            </a>
+            <div
+              class="ml-5 text-base tracking-tighter text-gray-700 font-medium"
+            >
+              <div>서울특별시 강서구 등촌로53길 7, 2층(등촌동) 주식회사</div>
+              <div>프라임플레이대표 : 김태윤사업자등록번호 : 357-86-00725</div>
+            </div>
+          </div>
+          <div>
+            <ul
+              class="flex flex-wrap items-center mb-6 text-sm font-medium gap-8"
+            >
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6"
+                  >CSI-PLAY 소개</a
+                >
+              </li>
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6"
+                  >회원이용약관</a
+                >
+              </li>
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6"
+                  >개인정보취급방침</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline">자주 묻는 질문</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">채용</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">제휴 및 사업문의</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">뉴스레터</a>
+              </li>
+            </ul>
+            <div class="flex justify-end items-center gap-2">
+              <div>
+                <a href="">
+                  <img
+                    src="./assets/images/others/googleplaystore.png"
+                    alt=""
+                    class="w-52"
+                  />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="./assets/images/others/appstore.png"
+                    alt=""
+                    class="w-52"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <hr class="my-6 border-gray-200 w-full pr-2 pl-8" />
         <span class="block text-sm text-gray-500 sm:text-center"
-          >© 2023
-          <a href="https://CSI-Play.com/" class="hover:underline">CSI-Play™</a>.
-          All Rights Reserved.</span
+          >© 2023 <a href="#" class="hover:underline">CSI-Play</a>. All Rights
+          Reserved.</span
         >
       </div>
     </footer>
