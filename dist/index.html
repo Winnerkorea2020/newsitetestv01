@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
   </head>
   <body
-    class="h-screen bg-gray-800 pt-16 overflow-auto overscroll-auto text-sm text-primary-black"
+    class="h-screen bg-gray-100 pt-16 overflow-auto overscroll-auto text-sm text-primary-black"
   >
     <header class="bg-white fixed top-0 left-0 w-full pr-2 pl-8 z-50 h-16">
       <div class="flex justify-between items-center gap-2 h-16">
@@ -660,7 +660,7 @@
       <section class="w-full bg-white px-2">
         <div class="py-2 inline-flex justify-items-center relative h-10 w-full">
           <div
-            class="font-semibold pr-3 absolute z-50 top-0 left-0 h-10 text-center flex items-center justify-center"
+            class="font-semibold pr-3 absolute z-50 top-0 left-0 h-10 text-center flex items-center justify-center bg-white"
           >
             Ticker!
           </div>
@@ -675,18 +675,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm">1 m ipsum, dolor s</span>
-            </a>
-
-            <a href="#" class="flex justify-start items-center">
-              <img
-                src="./assets/images/ico-bethumb-lg.svg"
-                alt=""
-                width="20px"
-                height="20px"
-                class="mr-1"
-              />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -699,7 +688,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -712,7 +701,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -725,7 +714,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -738,7 +727,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -751,7 +740,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -763,7 +752,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -775,7 +764,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -787,7 +776,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -799,7 +788,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -811,7 +800,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -823,7 +812,7 @@
                 height="20px"
                 class="mr-1"
               />
-              <span class="py-2 font-medium text-sm"
+              <span class="py-2 font-medium text-sm truncate"
                 >Lore m ipsum, dolor s</span
               >
             </a>
@@ -1382,14 +1371,29 @@
                 </div>
               </div>
               <div class="col-span-3 bg-white px-5 py-3 rounded-lg">
-                <h2 class="head_text font-semibold text-xl">Fear&Grid Rate</h2>
-                <div></div>
+                <h2 class="font-semibold text-xl">Fear&Greed Rate</h2>
+                <div class="mt-5">
+                  <div
+                    class="w-full flex flex-col justify-center items-center gap-y-3 border shadow rounded-lg"
+                  >
+                    <img
+                      src="./assets/images/others/cnn_fear_greed_index.PNG"
+                      alt=""
+                      class="w-fit p-3"
+                    />
+                    <img
+                      src="./assets/images/others/cnn_fear_greed_index-2.PNG"
+                      alt=""
+                      class="w-fit p-3"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
             <!-- Left Area 2 -->
             <div class="grid grid-cols-12 gap-3 mt-3">
-              <div class="col-span-6">
+              <div class="col-span-6 h-full">
                 <div
                   class="bg-white rounded-lg px-5 pt-6 pb-2.5 shadow-default sm:px-7.5 xl:pb-1"
                 >
@@ -1637,251 +1641,168 @@
                   </div>
                 </div>
               </div>
-              <div class="col-span-6">
-                <div>
-                  <div
-                    class="rounded-lg bg-white px-5 pt-6 pb-2.5 shadow-default sm:px-7.5 xl:pb-1"
-                  >
-                    <h4 class="mb-6 text-xl font-bold text-black">공지사항</h4>
-
-                    <div class="flex flex-col">
-                      <div
-                        class="grid grid-cols-3 rounded-sm bg-gray-2 sm:grid-cols-5"
-                      >
-                        <div class="p-2.5 xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
+              <div class="col-span-6 h-full">
+                <div
+                  class="bg-white rounded-lg px-5 pt-6 pb-2.5 shadow-default sm:px-7.5 xl:pb-1 h-full"
+                >
+                  <div class="mb-5">
+                    <div class="flex justify-between items-center w-full">
+                      <div class="basis-1/2">
+                        <h4 class="text-xl py-2.5 font-bold text-black">
+                          공지사항
+                        </h4>
+                      </div>
+                      <div class="basis-1/2">
+                        <div class="flex justify-end items-center gap-3">
+                          <button
+                            class="bg-primary-black text-white py-2.5 px-4 rounded-lg"
                           >
-                            Source
-                          </h5>
-                        </div>
-                        <div class="p-2.5 text-center xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
-                          >
-                            Visitors
-                          </h5>
-                        </div>
-                        <div class="p-2.5 text-center xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
-                          >
-                            Revenues
-                          </h5>
-                        </div>
-                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
-                          >
-                            Sales
-                          </h5>
-                        </div>
-                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
-                          >
-                            Conversion
-                          </h5>
+                            더보기
+                          </button>
                         </div>
                       </div>
-
-                      <div
-                        class="grid grid-cols-3 border-b border-stroke sm:grid-cols-5"
-                      >
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-01.svg"
-                              alt="Brand"
-                            />
-                          </div>
-                          <p class="hidden font-medium text-black sm:block">
-                            Google
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <div class="relative overflow-x-hidden">
+                      <table class="w-full text-sm text-left text-gray-500">
+                        <colgroup>
+                          <col width="20%" />
+                          <col width="60%" />
+                          <col width="20%" />
+                        </colgroup>
+                        <thead
+                          class="text-xs text-gray-700 uppercase bg-gray-50"
                         >
-                          <p class="font-medium text-black">3.5K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$5,768</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">590</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">4.8%</p>
-                        </div>
-                      </div>
-
-                      <div
-                        class="grid grid-cols-3 border-b border-stroke sm:grid-cols-5"
-                      >
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-02.svg"
-                              alt="Brand"
-                            />
-                          </div>
-                          <p class="font-medium hidden text-black sm:block">
-                            Twitter
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-black">2.2K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$4,635</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">467</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">4.3%</p>
-                        </div>
-                      </div>
-
-                      <div
-                        class="grid grid-cols-3 border-b border-stroke sm:grid-cols-5"
-                      >
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-03.svg"
-                              alt="Brand"
-                            />
-                          </div>
-                          <p class="hidden font-medium text-black sm:block">
-                            Github
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-black">2.1K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$4,290</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">420</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">3.7%</p>
-                        </div>
-                      </div>
-
-                      <div
-                        class="grid grid-cols-3 border-b border-stroke sm:grid-cols-5"
-                      >
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-04.svg"
-                              alt="Brand"
-                            />
-                          </div>
-                          <p class="hidden font-medium text-black sm:block">
-                            Vimeo
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-black">1.5K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$3,580</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">389</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">2.5%</p>
-                        </div>
-                      </div>
-
-                      <div class="grid grid-cols-3 sm:grid-cols-5">
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-05.svg"
-                              alt="Brand"
-                            />
-                          </div>
-                          <p class="hidden font-medium text-black sm:block">
-                            Facebook
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-black">1.2K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$2,740</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">230</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">1.9%</p>
-                        </div>
-                      </div>
+                          <tr>
+                            <th scope="col" class="px-6 py-3"></th>
+                            <th scope="col" class="px-6 py-3">제목</th>
+                            <th scope="col" class="px-6 py-3">Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="bg-white border-b">
+                            <th class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span
+                                class="px-2 py-0.5 text-xs bg-gray-100 text-orange-500 font-semibold rounded-sm w-fit"
+                                >블록체인</span
+                              >
+                            </th>
+                            <td class="px-6 py-4 font-thin whitespace-nowrap">
+                              <p class="font-thin truncate break-all w-96">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Veniam illo dolores excepturi
+                                iure! Aperiam itaque, illo vel adipisci autem
+                                veritatis saepe non optio, distinctio alias,
+                                placeat deserunt. Iste, minima deserunt?
+                              </p>
+                            </td>
+                            <td class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span>2022-01-01</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-b">
+                            <th class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span
+                                class="px-2 py-0.5 text-xs bg-gray-100 text-orange-500 font-semibold rounded-sm w-fit"
+                                >PPT</span
+                              >
+                            </th>
+                            <td class="px-6 py-4 font-thin whitespace-nowrap">
+                              <p class="font-thin truncate break-all w-96">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Veniam illo dolores excepturi
+                                iure! Aperiam itaque, illo vel adipisci autem
+                                veritatis saepe non optio, distinctio alias,
+                                placeat deserunt. Iste, minima deserunt?
+                              </p>
+                            </td>
+                            <td class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span>2022-01-01</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-b">
+                            <th class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span
+                                class="px-2 py-0.5 text-xs bg-gray-100 text-orange-500 font-semibold rounded-sm w-fit"
+                                >매크로</span
+                              >
+                            </th>
+                            <td class="px-6 py-4 font-thin whitespace-nowrap">
+                              <p class="font-thin truncate break-all w-96">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Veniam illo dolores excepturi
+                                iure! Aperiam itaque, illo vel adipisci autem
+                                veritatis saepe non optio, distinctio alias,
+                                placeat deserunt. Iste, minima deserunt?
+                              </p>
+                            </td>
+                            <td class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span>2022-01-01</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-b">
+                            <th class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span
+                                class="px-2 py-0.5 text-xs bg-gray-100 text-orange-500 font-semibold rounded-sm w-fit"
+                                >정기간행물</span
+                              >
+                            </th>
+                            <td class="px-6 py-4 font-thin whitespace-nowrap">
+                              <p class="font-thin truncate break-all w-96">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Veniam illo dolores excepturi
+                                iure! Aperiam itaque, illo vel adipisci autem
+                                veritatis saepe non optio, distinctio alias,
+                                placeat deserunt. Iste, minima deserunt?
+                              </p>
+                            </td>
+                            <td class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span>2022-01-01</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-b truncate">
+                            <th class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span
+                                class="px-2 py-0.5 text-xs bg-gray-100 text-orange-500 font-semibold rounded-sm w-fit"
+                                >중심추진과제</span
+                              >
+                            </th>
+                            <td class="px-6 py-4">
+                              <p class="font-thin truncate break-all w-96">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Veniam illo dolores excepturi
+                                iure! Aperiam itaque, illo vel adipisci autem
+                                veritatis saepe non optio, distinctio alias,
+                                placeat deserunt. Iste, minima deserunt?
+                              </p>
+                            </td>
+                            <td class="px-6 py-4 font-thin">
+                              <span>2022-01-01</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-b truncate">
+                            <th class="px-6 py-4 font-thin whitespace-nowrap">
+                              <span
+                                class="px-2 py-0.5 text-xs bg-gray-100 text-orange-500 font-semibold rounded-sm w-fit"
+                                >중심추진과제</span
+                              >
+                            </th>
+                            <td class="px-6 py-4">
+                              <p class="font-thin truncate break-all w-96">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Veniam illo dolores excepturi
+                                iure! Aperiam itaque, illo vel adipisci autem
+                                veritatis saepe non optio, distinctio alias,
+                                placeat deserunt. Iste, minima deserunt?
+                              </p>
+                            </td>
+                            <td class="px-6 py-4 font-thin">
+                              <span>2022-01-01</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -1889,18 +1810,18 @@
             </div>
             <!-- Left Area 3 -->
             <div class="grid grid-cols-12 gap-3 mt-3">
-              <div class="col-span-6">
+              <div class="col-span-6 h-full">
                 <div
-                  class="bg-white rounded-lg px-5 pt-6 pb-2.5 shadow-default sm:px-7.5 xl:pb-1"
+                  class="bg-white rounded-lg px-5 pt-6 pb-2.5 shadow-default sm:px-7.5 xl:pb-1 h-full"
                 >
                   <div class="mb-5">
                     <div class="flex justify-between items-center w-full">
-                      <div class="basis-1/2">
+                      <div class="basis-1/3">
                         <h4 class="text-xl py-2.5 font-bold text-black">
                           거래소 청산
                         </h4>
                       </div>
-                      <div class="basis-1/2">
+                      <div class="basis-2/2">
                         <div class="flex justify-end items-center gap-3">
                           <label
                             for="currencylist_2"
@@ -1948,19 +1869,19 @@
                           <col width="15%" />
                           <col width="15%" />
                           <col width="15%" />
-                          <col width="25%" />
+                          <col width="10%" />
                           <col width="20%" />
                         </colgroup>
                         <thead
                           class="text-xs text-gray-700 uppercase bg-gray-50"
                         >
                           <tr>
-                            <th scope="col" class="px-6 py-3">거래소</th>
-                            <th scope="col" class="px-6 py-3">청산($)</th>
-                            <th scope="col" class="px-6 py-3">공매수($)</th>
-                            <th scope="col" class="px-6 py-3">공매도($)</th>
-                            <th scope="col" class="px-6 py-3">백분율</th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-1 py-3">거래소</th>
+                            <th scope="col" class="px-1 py-3">청산($)</th>
+                            <th scope="col" class="px-1 py-3">공매수($)</th>
+                            <th scope="col" class="px-1 py-3">공매도($)</th>
+                            <th scope="col" class="px-1 py-3">백분율</th>
+                            <th scope="col" class="px-1 py-3">
                               백분율(Long/Short)
                             </th>
                           </tr>
@@ -1980,7 +1901,7 @@
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
-                            <td class="px-2 py-4">
+                            <td class="px-2 py-4 truncate break-all">
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
@@ -1997,10 +1918,10 @@
                                     id="trade-range"
                                     type="range"
                                     value="50"
-                                    class="w-full h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
+                                    class="w-24 h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
                                   />
                                 </div>
-                                <div class="">
+                                <div class="w-10">
                                   <span class="" id="trade-value">100</span>
                                   <span>%</span>
                                 </div>
@@ -2018,7 +1939,7 @@
                                 </script>
                               </div>
                             </td>
-                            <td class="px-3 py-4">
+                            <td class="px-1 py-4">
                               <span class="">999,999,999</span>
                               <span>M</span><span class="ml-3">Long</span>
                             </td>
@@ -2037,7 +1958,7 @@
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
-                            <td class="px-2 py-4">
+                            <td class="px-2 py-4 truncate break-all">
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
@@ -2054,10 +1975,10 @@
                                     id="trade-range"
                                     type="range"
                                     value="50"
-                                    class="w-full h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
+                                    class="w-24 h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
                                   />
                                 </div>
-                                <div class="">
+                                <div class="w-10">
                                   <span class="" id="trade-value">100</span>
                                   <span>%</span>
                                 </div>
@@ -2075,7 +1996,7 @@
                                 </script>
                               </div>
                             </td>
-                            <td class="px-3 py-4">
+                            <td class="px-1 py-4">
                               <span class="">999,999,999</span>
                               <span>M</span><span class="ml-3">Long</span>
                             </td>
@@ -2094,7 +2015,7 @@
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
-                            <td class="px-2 py-4">
+                            <td class="px-2 py-4 truncate break-all">
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
@@ -2111,10 +2032,10 @@
                                     id="trade-range"
                                     type="range"
                                     value="50"
-                                    class="w-full h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
+                                    class="w-24 h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
                                   />
                                 </div>
-                                <div class="">
+                                <div class="w-10">
                                   <span class="" id="trade-value">100</span>
                                   <span>%</span>
                                 </div>
@@ -2132,7 +2053,7 @@
                                 </script>
                               </div>
                             </td>
-                            <td class="px-3 py-4">
+                            <td class="px-1 py-4">
                               <span class="">999,999,999</span>
                               <span>M</span><span class="ml-3">Long</span>
                             </td>
@@ -2151,7 +2072,7 @@
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
-                            <td class="px-2 py-4">
+                            <td class="px-2 py-4 truncate break-all">
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
@@ -2168,10 +2089,10 @@
                                     id="trade-range"
                                     type="range"
                                     value="50"
-                                    class="w-full h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
+                                    class="w-24 h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
                                   />
                                 </div>
-                                <div class="">
+                                <div class="w-10">
                                   <span class="" id="trade-value">100</span>
                                   <span>%</span>
                                 </div>
@@ -2189,7 +2110,7 @@
                                 </script>
                               </div>
                             </td>
-                            <td class="px-3 py-4">
+                            <td class="px-1 py-4">
                               <span class="">999,999,999</span>
                               <span>M</span><span class="ml-3">Long</span>
                             </td>
@@ -2208,7 +2129,7 @@
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
-                            <td class="px-2 py-4">
+                            <td class="px-2 py-4 truncate break-all">
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
@@ -2225,10 +2146,10 @@
                                     id="trade-range"
                                     type="range"
                                     value="50"
-                                    class="w-full h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
+                                    class="w-24 h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
                                   />
                                 </div>
-                                <div class="">
+                                <div class="w-10">
                                   <span class="" id="trade-value">100</span>
                                   <span>%</span>
                                 </div>
@@ -2246,7 +2167,7 @@
                                 </script>
                               </div>
                             </td>
-                            <td class="px-3 py-4">
+                            <td class="px-1 py-4">
                               <span class="">999,999,999</span>
                               <span>M</span><span class="ml-3">Long</span>
                             </td>
@@ -2265,7 +2186,7 @@
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
-                            <td class="px-2 py-4">
+                            <td class="px-2 py-4 truncate break-all">
                               <span class="">999,999,999</span>
                               <span>M</span>
                             </td>
@@ -2282,10 +2203,10 @@
                                     id="trade-range"
                                     type="range"
                                     value="50"
-                                    class="w-full h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
+                                    class="w-24 h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
                                   />
                                 </div>
-                                <div class="">
+                                <div class="w-10">
                                   <span class="" id="trade-value">100</span>
                                   <span>%</span>
                                 </div>
@@ -2303,7 +2224,7 @@
                                 </script>
                               </div>
                             </td>
-                            <td class="px-3 py-4">
+                            <td class="px-1 py-4">
                               <span class="">999,999,999</span>
                               <span>M</span><span class="ml-3">Long</span>
                             </td>
@@ -2314,253 +2235,212 @@
                   </div>
                 </div>
               </div>
-              <div class="col-span-6">
-                <div>
-                  <div
-                    class="rounded-lg bg-white px-5 pt-6 pb-2.5 shadow-default sm:px-7.5 xl:pb-1"
-                  >
-                    <h4 class="mb-6 text-xl font-bold text-black">
-                      거래소 청산
-                    </h4>
-
-                    <div class="flex flex-col">
-                      <div
-                        class="grid grid-cols-3 rounded-sm bg-gray-2 sm:grid-cols-5"
-                      >
-                        <div class="p-2.5 xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
+              <div class="col-span-6 h-full">
+                <div
+                  class="bg-white rounded-lg px-5 pt-6 pb-2.5 shadow-default sm:px-7.5 xl:pb-1 h-full"
+                >
+                  <div class="mb-1">
+                    <div class="flex justify-between items-center w-full">
+                      <div class="basis-1/2">
+                        <h4 class="text-xl py-2.5 font-bold text-black">
+                          BEST 코인 시세 정보
+                        </h4>
+                      </div>
+                      <div class="basis-1/2">
+                        <div class="flex justify-end items-center gap-3">
+                          <button
+                            class="bg-primary-black text-white py-2.5 px-4 rounded-lg"
                           >
-                            Source
-                          </h5>
+                            더보기
+                          </button>
                         </div>
-                        <div class="p-2.5 text-center xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
+                      </div>
+                    </div>
+                    <div class="mt-5">
+                      <div class="">
+                        <div
+                          class="inline-flex justify-between items-center gap-x-1.5 w-full"
+                        >
+                          <div
+                            class="w-full border border-orange-400 text-center py-2.5 rounded-sm hover:bg-orange-500 hover:text-white bg-orange-400 text-white"
                           >
-                            Visitors
-                          </h5>
-                        </div>
-                        <div class="p-2.5 text-center xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
+                            코인
+                          </div>
+                          <div
+                            class="w-full border border-orange-400 text-center py-2.5 rounded-sm hover:bg-orange-500 hover:text-white"
                           >
-                            Revenues
-                          </h5>
-                        </div>
-                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
+                            거래소
+                          </div>
+                          <div
+                            class="w-full border border-orange-400 text-center py-2.5 rounded-sm hover:bg-orange-500 hover:text-white"
                           >
-                            Sales
-                          </h5>
-                        </div>
-                        <div class="hidden p-2.5 text-center sm:block xl:p-5">
-                          <h5
-                            class="text-sm font-medium uppercase xsm:text-base"
-                          >
-                            Conversion
-                          </h5>
-                        </div>
-                      </div>
-
-                      <div
-                        class="grid grid-cols-3 border-b border-stroke sm:grid-cols-5"
-                      >
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-01.svg"
-                              alt="Brand"
-                            />
+                            선물
                           </div>
-                          <p class="hidden font-medium text-black sm:block">
-                            Google
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-black">3.5K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$5,768</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">590</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">4.8%</p>
                         </div>
                       </div>
-
-                      <div
-                        class="grid grid-cols-3 border-b border-stroke sm:grid-cols-5"
-                      >
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-02.svg"
-                              alt="Brand"
-                            />
-                          </div>
-                          <p class="font-medium hidden text-black sm:block">
-                            Twitter
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <div class="relative overflow-x-auto">
+                      <table class="w-full text-sm text-left text-gray-500">
+                        <thead
+                          class="text-xs text-gray-700 uppercase bg-gray-100"
                         >
-                          <p class="font-medium text-black">2.2K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$4,635</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">467</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">4.3%</p>
-                        </div>
-                      </div>
-
-                      <div
-                        class="grid grid-cols-3 border-b border-stroke sm:grid-cols-5"
-                      >
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-03.svg"
-                              alt="Brand"
-                            />
-                          </div>
-                          <p class="hidden font-medium text-black sm:block">
-                            Github
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-black">2.1K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$4,290</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">420</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">3.7%</p>
-                        </div>
-                      </div>
-
-                      <div
-                        class="grid grid-cols-3 border-b border-stroke sm:grid-cols-5"
-                      >
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-04.svg"
-                              alt="Brand"
-                            />
-                          </div>
-                          <p class="hidden font-medium text-black sm:block">
-                            Vimeo
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-black">1.5K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$3,580</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">389</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">2.5%</p>
-                        </div>
-                      </div>
-
-                      <div class="grid grid-cols-3 sm:grid-cols-5">
-                        <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                          <div class="flex-shrink-0">
-                            <img
-                              src="./images/brand/brand-05.svg"
-                              alt="Brand"
-                            />
-                          </div>
-                          <p class="hidden font-medium text-black sm:block">
-                            Facebook
-                          </p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-black">1.2K</p>
-                        </div>
-
-                        <div
-                          class="flex items-center justify-center p-2.5 xl:p-5"
-                        >
-                          <p class="font-medium text-meta-3">$2,740</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-black">230</p>
-                        </div>
-
-                        <div
-                          class="hidden items-center justify-center p-2.5 sm:flex xl:p-5"
-                        >
-                          <p class="font-medium text-meta-5">1.9%</p>
-                        </div>
-                      </div>
+                          <tr>
+                            <th scope="col" class="px-6 py-3">코인/거래금액</th>
+                            <th scope="col" class="px-6 py-3">거래금액</th>
+                            <th scope="col" class="px-6 py-3">시세(KRW)</th>
+                            <th scope="col" class="px-6 py-3">24시간 변동율</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="bg-white border-">
+                            <th class="px-6 py-4">
+                              <div class="inline-flex items-center">
+                                <img
+                                  src="./assets/images/ico-bitcoin.svg"
+                                  alt=""
+                                  width="20px"
+                                  height="20px"
+                                />
+                                <span class="ml-1 text-sm">BitCoin</span>
+                                <span class="ml-1 text-sm font-thin"
+                                  >BTC/KRW</span
+                                >
+                              </div>
+                            </th>
+                            <td class="px-6 py-4"><span>8조 3,686억</span></td>
+                            <td class="px-6 py-4">
+                              <span class="text-red-500">38,452,000</span>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="">
+                                <button
+                                  class="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16"
+                                >
+                                  -0.03%
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-">
+                            <th class="px-6 py-4">
+                              <div class="inline-flex items-center">
+                                <img
+                                  src="./assets/images/ico-bitcoin.svg"
+                                  alt=""
+                                  width="20px"
+                                  height="20px"
+                                />
+                                <span class="ml-1 text-sm">BitCoin</span>
+                                <span class="ml-1 text-sm font-thin"
+                                  >BTC/KRW</span
+                                >
+                              </div>
+                            </th>
+                            <td class="px-6 py-4"><span>8조 3,686억</span></td>
+                            <td class="px-6 py-4">
+                              <span class="text-red-500">38,452,000</span>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="">
+                                <button
+                                  class="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16"
+                                >
+                                  -0.03%
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-">
+                            <th class="px-6 py-4">
+                              <div class="inline-flex items-center">
+                                <img
+                                  src="./assets/images/ico-bitcoin.svg"
+                                  alt=""
+                                  width="20px"
+                                  height="20px"
+                                />
+                                <span class="ml-1 text-sm">BitCoin</span>
+                                <span class="ml-1 text-sm font-thin"
+                                  >BTC/KRW</span
+                                >
+                              </div>
+                            </th>
+                            <td class="px-6 py-4"><span>8조 3,686억</span></td>
+                            <td class="px-6 py-4">
+                              <span class="text-red-500">38,452,000</span>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="">
+                                <button
+                                  class="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16"
+                                >
+                                  -0.03%
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-">
+                            <th class="px-6 py-4">
+                              <div class="inline-flex items-center">
+                                <img
+                                  src="./assets/images/ico-bitcoin.svg"
+                                  alt=""
+                                  width="20px"
+                                  height="20px"
+                                />
+                                <span class="ml-1 text-sm">BitCoin</span>
+                                <span class="ml-1 text-sm font-thin"
+                                  >BTC/KRW</span
+                                >
+                              </div>
+                            </th>
+                            <td class="px-6 py-4"><span>8조 3,686억</span></td>
+                            <td class="px-6 py-4">
+                              <span class="text-red-500">38,452,000</span>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="">
+                                <button
+                                  class="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16"
+                                >
+                                  -0.03%
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-">
+                            <th class="px-6 py-4">
+                              <div class="inline-flex items-center">
+                                <img
+                                  src="./assets/images/ico-bitcoin.svg"
+                                  alt=""
+                                  width="20px"
+                                  height="20px"
+                                />
+                                <span class="ml-1 text-sm">BitCoin</span>
+                                <span class="ml-1 text-sm font-thin"
+                                  >BTC/KRW</span
+                                >
+                              </div>
+                            </th>
+                            <td class="px-6 py-4"><span>8조 3,686억</span></td>
+                            <td class="px-6 py-4">
+                              <span class="text-red-500">38,452,000</span>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="">
+                                <button
+                                  class="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16"
+                                >
+                                  1.5%
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -2799,7 +2679,12 @@
             <!-- Silder Bar Banner -->
             <div class="mt-3">
               <div class="bg-gray-400 rounded-lg">
-                <div class="h-48 text-center">Banner</div>
+                <div class="text-center">
+                  <img
+                    src="./assets/images/banner/banner-main-top.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
             <!-- Top Coin List -->
@@ -3269,7 +3154,11 @@
       <div class="w-full p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a href="#" class="flex items-center mb-4 sm:mb-0">
-            <img src="#" class="h-8 mr-3" alt="CSI-Play Logo" />
+            <img
+              src="./assets/images/ico-abbc.svg"
+              class="h-8 mr-3"
+              alt="CSI-Play Logo"
+            />
             <span class="self-center text-2xl font-semibold whitespace-nowrap"
               >CSI-Play</span
             >
