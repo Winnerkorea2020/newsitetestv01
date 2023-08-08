@@ -27,12 +27,7 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
-  );
+  background: linear-gradient(97.86deg, #a509ff 0%, #34acc7 53.65%, #a134c7 100%);
 }
 
 .gradient-02 {
@@ -79,11 +74,7 @@
 }
 
 .gradient-05 {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .feedback-gradient {
@@ -165,4 +156,9 @@
   padding-left: 6px;
   position: relative;
   top: -1px;
+}
+
+.active {
+  background-color: #dd8c40;
+  color: white;
 }
