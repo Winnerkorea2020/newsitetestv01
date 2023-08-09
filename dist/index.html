@@ -31,7 +31,7 @@
 
           <!-- Navi Link -->
           <div class="ml-8">
-            <ul class="flex justify-between items-center gap-3">
+            <ul class="flex justify-between items-center gap-10">
               <!-- 코인 -->
               <li class="group inline-block relative">
                 <button
@@ -879,7 +879,9 @@
                       <!-- 결과 -->
                       <div class="grid grid-cols-2 gap-3 mt-3">
                         <!-- Left Side Design -->
-                        <div class="px-3 py-6 rounded-lg shadow-sm border">
+                        <div
+                          class="px-3 py-6 rounded-lg shadow-sm border bg-gray-50"
+                        >
                           <!-- Long & Short -->
                           <div
                             class="w-full inline-flex justify-between items-center"
@@ -890,7 +892,7 @@
                               Long
                             </div>
                             <div
-                              class="inline-block w-full px-3 py-2.5 rounded-r-lg border bg-gray-200 text-center"
+                              class="inline-block w-full px-3 py-2.5 rounded-r-lg bg-gray-200 text-center"
                             >
                               Short
                             </div>
@@ -1036,7 +1038,9 @@
                           </div>
                         </div>
                         <!-- Right Side Design -->
-                        <div class="px-3 py-6 rounded-lg shadow-sm border">
+                        <div
+                          class="px-3 py-6 rounded-lg shadow-sm border bg-gray-50"
+                        >
                           <div class="px-5 py-3">
                             <h3 class="text-xl font-semibold">결과</h3>
                             <div class="mt-8">
@@ -1106,7 +1110,6 @@
                         src="https://app2.weatherwidget.org/js/?id=ww_9563561bd48f1"
                       ></script>
                     </div>
-                    <div></div>
                   </div>
                   <div class="px-5 py-3 bg-white rounded-lg">
                     <div class="mt-3">
@@ -1269,15 +1272,15 @@
                   <table class="w-full text-sm text-left text-gray-500">
                     <thead class="text-gray-700 uppercase bg-gray-200">
                       <tr class="border-b">
-                        <th scope="col" class="px-6 py-3">코인</th>
-                        <th scope="col" class="px-6 py-3">가격(USD)</th>
-                        <th scope="col" class="px-6 py-3">가격(KRW)</th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-3 py-3">코인</th>
+                        <th scope="col" class="px-3 py-3">가격(USD)</th>
+                        <th scope="col" class="px-3 py-3">가격(KRW)</th>
+                        <th scope="col" class="px-3 py-3">
                           김프(한국)프리미엄
                         </th>
-                        <th scope="col" class="px-6 py-3">변환%(24h)</th>
-                        <th scope="col" class="px-6 py-3">시가총액</th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-3 py-3">변환%(24h)</th>
+                        <th scope="col" class="px-3 py-3">시가총액</th>
+                        <th scope="col" class="px-3 py-3">
                           USD표시 24시간 거래량
                         </th>
                       </tr>
@@ -1988,10 +1991,17 @@
                               scope="row"
                               class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap"
                             >
-                              <span
-                                class="bg-gray-400 text-white w-full h-full inline-block text-center rounded-sm"
-                                >합계</span
+                              <div
+                                class="inline-flex justify-start items-center gap-1"
                               >
+                                <img
+                                  src="./assets/images/ico-binance-lg.svg"
+                                  alt=""
+                                  width="20"
+                                  height="20"
+                                />
+                                <span>Binance</span>
+                              </div>
                             </th>
                             <td class="px-2 py-4">
                               <span class="">999,999,999</span>
@@ -2045,10 +2055,15 @@
                               scope="row"
                               class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap"
                             >
-                              <span
-                                class="bg-gray-400 text-white w-full h-full inline-block text-center rounded-sm"
-                                >합계</span
-                              >
+                              <div class="flex items-center gap-1">
+                                <img
+                                  src="./assets/images/ico-binance-lg.svg"
+                                  alt=""
+                                  width="20"
+                                  height="20"
+                                />
+                                <span>OKX</span>
+                              </div>
                             </th>
                             <td class="px-2 py-4">
                               <span class="">999,999,999</span>
@@ -2102,10 +2117,15 @@
                               scope="row"
                               class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap"
                             >
-                              <span
-                                class="bg-gray-400 text-white w-full h-full inline-block text-center rounded-sm"
-                                >합계</span
-                              >
+                              <div class="flex items-center gap-1">
+                                <img
+                                  src="./assets/images/ico-binance-lg.svg"
+                                  alt=""
+                                  width="20"
+                                  height="20"
+                                />
+                                <span>Huobi</span>
+                              </div>
                             </th>
                             <td class="px-2 py-4">
                               <span class="">999,999,999</span>
@@ -2159,10 +2179,15 @@
                               scope="row"
                               class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap"
                             >
-                              <span
-                                class="bg-gray-400 text-white w-full h-full inline-block text-center rounded-sm"
-                                >합계</span
-                              >
+                              <div class="flex items-center gap-1">
+                                <img
+                                  src="./assets/images/ico-binance-lg.svg"
+                                  alt=""
+                                  width="20"
+                                  height="20"
+                                />
+                                <span>Bybit</span>
+                              </div>
                             </th>
                             <td class="px-2 py-4">
                               <span class="">999,999,999</span>
@@ -2216,10 +2241,201 @@
                               scope="row"
                               class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap"
                             >
-                              <span
-                                class="bg-gray-400 text-white w-full h-full inline-block text-center rounded-sm"
-                                >합계</span
+                              <div class="flex items-center gap-1">
+                                <img
+                                  src="./assets/images/ico-binance-lg.svg"
+                                  alt=""
+                                  width="20"
+                                  height="20"
+                                />
+                                <span>CoinEx</span>
+                              </div>
+                            </th>
+                            <td class="px-2 py-4">
+                              <span class="">999,999,999</span>
+                              <span>M</span>
+                            </td>
+                            <td class="px-2 py-4 truncate break-all">
+                              <span class="">999,999,999</span>
+                              <span>M</span>
+                            </td>
+                            <td class="px-2 py-4">
+                              <span class="">999,999,999</span>
+                              <span>M</span>
+                            </td>
+                            <td class="px-2 py-4">
+                              <div
+                                class="flex justify-start items-center gap-3"
                               >
+                                <div class="inline-flex items-center">
+                                  <input
+                                    id="trade-range"
+                                    type="range"
+                                    value="50"
+                                    class="w-24 h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
+                                  />
+                                </div>
+                                <div class="w-10">
+                                  <span class="" id="trade-value">100</span>
+                                  <span>%</span>
+                                </div>
+
+                                <script>
+                                  const slider =
+                                    document.getElementById("trade-range");
+                                  const output =
+                                    document.getElementById("trade-value");
+                                  output.innerHTML = slider.value;
+
+                                  slider.oninput = function () {
+                                    output.innerHTML = this.value;
+                                  };
+                                </script>
+                              </div>
+                            </td>
+                            <td class="px-1 py-4">
+                              <span class="">999,999,999</span>
+                              <span>M</span><span class="ml-3">Long</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-b">
+                            <th
+                              scope="row"
+                              class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap"
+                            >
+                              <div class="flex items-center gap-1">
+                                <img
+                                  src="./assets/images/ico-binance-lg.svg"
+                                  alt=""
+                                  width="20"
+                                  height="20"
+                                />
+                                <span>Bitmex</span>
+                              </div>
+                            </th>
+                            <td class="px-2 py-4">
+                              <span class="">999,999,999</span>
+                              <span>M</span>
+                            </td>
+                            <td class="px-2 py-4 truncate break-all">
+                              <span class="">999,999,999</span>
+                              <span>M</span>
+                            </td>
+                            <td class="px-2 py-4">
+                              <span class="">999,999,999</span>
+                              <span>M</span>
+                            </td>
+                            <td class="px-2 py-4">
+                              <div
+                                class="flex justify-start items-center gap-3"
+                              >
+                                <div class="inline-flex items-center">
+                                  <input
+                                    id="trade-range"
+                                    type="range"
+                                    value="50"
+                                    class="w-24 h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
+                                  />
+                                </div>
+                                <div class="w-10">
+                                  <span class="" id="trade-value">100</span>
+                                  <span>%</span>
+                                </div>
+
+                                <script>
+                                  const slider =
+                                    document.getElementById("trade-range");
+                                  const output =
+                                    document.getElementById("trade-value");
+                                  output.innerHTML = slider.value;
+
+                                  slider.oninput = function () {
+                                    output.innerHTML = this.value;
+                                  };
+                                </script>
+                              </div>
+                            </td>
+                            <td class="px-1 py-4">
+                              <span class="">999,999,999</span>
+                              <span>M</span><span class="ml-3">Long</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-b">
+                            <th
+                              scope="row"
+                              class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap"
+                            >
+                              <div class="flex items-center gap-1">
+                                <img
+                                  src="./assets/images/ico-binance-lg.svg"
+                                  alt=""
+                                  width="20"
+                                  height="20"
+                                />
+                                <span>Deribit</span>
+                              </div>
+                            </th>
+                            <td class="px-2 py-4">
+                              <span class="">999,999,999</span>
+                              <span>M</span>
+                            </td>
+                            <td class="px-2 py-4 truncate break-all">
+                              <span class="">999,999,999</span>
+                              <span>M</span>
+                            </td>
+                            <td class="px-2 py-4">
+                              <span class="">999,999,999</span>
+                              <span>M</span>
+                            </td>
+                            <td class="px-2 py-4">
+                              <div
+                                class="flex justify-start items-center gap-3"
+                              >
+                                <div class="inline-flex items-center">
+                                  <input
+                                    id="trade-range"
+                                    type="range"
+                                    value="50"
+                                    class="w-24 h-3 bg-orange-400 rounded-lg appearance-none cursor-pointer"
+                                  />
+                                </div>
+                                <div class="w-10">
+                                  <span class="" id="trade-value">100</span>
+                                  <span>%</span>
+                                </div>
+
+                                <script>
+                                  const slider =
+                                    document.getElementById("trade-range");
+                                  const output =
+                                    document.getElementById("trade-value");
+                                  output.innerHTML = slider.value;
+
+                                  slider.oninput = function () {
+                                    output.innerHTML = this.value;
+                                  };
+                                </script>
+                              </div>
+                            </td>
+                            <td class="px-1 py-4">
+                              <span class="">999,999,999</span>
+                              <span>M</span><span class="ml-3">Long</span>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-b">
+                            <th
+                              scope="row"
+                              class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap"
+                            >
+                              <div class="flex items-center gap-1">
+                                <img
+                                  src="./assets/images/ico-binance-lg.svg"
+                                  alt=""
+                                  width="20"
+                                  height="20"
+                                />
+                                <span>Bitfinex</span>
+                              </div>
                             </th>
                             <td class="px-2 py-4">
                               <span class="">999,999,999</span>
@@ -2472,6 +2688,93 @@
                               </div>
                             </td>
                           </tr>
+                          <tr class="bg-white border-">
+                            <th class="px-6 py-4">
+                              <div class="inline-flex items-center">
+                                <img
+                                  src="./assets/images/ico-bitcoin.svg"
+                                  alt=""
+                                  width="20px"
+                                  height="20px"
+                                />
+                                <span class="ml-1 text-sm">BitCoin</span>
+                                <span class="ml-1 text-sm font-thin"
+                                  >BTC/KRW</span
+                                >
+                              </div>
+                            </th>
+                            <td class="px-6 py-4"><span>8조 3,686억</span></td>
+                            <td class="px-6 py-4">
+                              <span class="text-red-500">38,452,000</span>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="">
+                                <button
+                                  class="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16"
+                                >
+                                  1.5%
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-">
+                            <th class="px-6 py-4">
+                              <div class="inline-flex items-center">
+                                <img
+                                  src="./assets/images/ico-bitcoin.svg"
+                                  alt=""
+                                  width="20px"
+                                  height="20px"
+                                />
+                                <span class="ml-1 text-sm">BitCoin</span>
+                                <span class="ml-1 text-sm font-thin"
+                                  >BTC/KRW</span
+                                >
+                              </div>
+                            </th>
+                            <td class="px-6 py-4"><span>8조 3,686억</span></td>
+                            <td class="px-6 py-4">
+                              <span class="text-red-500">38,452,000</span>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="">
+                                <button
+                                  class="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16"
+                                >
+                                  1.5%
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bg-white border-">
+                            <th class="px-6 py-4">
+                              <div class="inline-flex items-center">
+                                <img
+                                  src="./assets/images/ico-bitcoin.svg"
+                                  alt=""
+                                  width="20px"
+                                  height="20px"
+                                />
+                                <span class="ml-1 text-sm">BitCoin</span>
+                                <span class="ml-1 text-sm font-thin"
+                                  >BTC/KRW</span
+                                >
+                              </div>
+                            </th>
+                            <td class="px-6 py-4"><span>8조 3,686억</span></td>
+                            <td class="px-6 py-4">
+                              <span class="text-red-500">38,452,000</span>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="">
+                                <button
+                                  class="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16"
+                                >
+                                  1.5%
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
                         </tbody>
                       </table>
                     </div>
@@ -2483,168 +2786,167 @@
           <!-- Right Area -->
           <div class="col-span-2">
             <!-- Sign In and Best Coin List -->
-            <div class="px-5 py-8 mx-auto w-full bg-white rounded-lg">
+            <div class="px-5 pt-5 mx-auto w-full bg-white rounded-lg">
               <div
-                class="px-5 py-6 bg-white rounded-lg shadow shadow-gray-100 w-full"
+                class="grid grid-cols-4 gap-3 tracking-tighter text-gray-600 font-medium"
               >
-                <div class="grid grid-cols-4 gap-6 p-4">
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-upbit-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">Upbit</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-upbit-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">Upbit</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-bethumb-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">bethumb</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-bethumb-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">bethumb</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-gopax-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">Gopax</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-gopax-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">Gopax</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-coinone-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">Coinone</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-coinone-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">Coinone</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-binance-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">Binance</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-binance-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">Binance</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-gate-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">gate</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-gate-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">gate</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-kucoin-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">KuCoin</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-kucoin-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">KuCoin</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-bybit-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">bybit</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-bybit-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">bybit</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-bingx-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">BingX</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-bingx-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">BingX</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-lbank-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">Lbank</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-lbank-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">Lbank</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-digifinex-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">digifinex</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-digifinex-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">digifinex</div>
+                  </a>
+                </div>
 
-                  <div class="">
-                    <a href="" class="">
-                      <img
-                        src="./assets/images/ico-bethumb-lg.svg"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                        class=""
-                      />
-                      <div class="w-full text-center">huobi</div>
-                    </a>
-                  </div>
+                <div class="">
+                  <a href="" class="">
+                    <img
+                      src="./assets/images/ico-bethumb-lg.svg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+                    <div class="w-full text-center">huobi</div>
+                  </a>
                 </div>
               </div>
+
               <!-- Sign In/ Sign Up -->
 
               <div class="mt-5">
@@ -2722,9 +3024,9 @@
             </div>
             <!-- Top Coin List -->
             <div class="mt-3">
-              <div class="bg-gray-50 px-6 py-8 rounded-lg">
+              <div class="bg-white px-2 py-3 rounded-lg">
                 <!-- wrap-soar-list -->
-                <div class="w-full bg-white rounded-lg shadow">
+                <div class="w-full">
                   <div class="flex flex-col items-center justify-center">
                     <div class="flex flex-col items-center justify-center mt-5">
                       <img
@@ -2737,7 +3039,7 @@
                         <span> 급상승 10코인 </span>
                       </h3>
                     </div>
-                    <div class="w-full px-6 mt-5">
+                    <div class="w-full px-3 mt-5">
                       <div
                         class="flex justify-between items-center gap-2 w-full"
                       >
@@ -2779,7 +3081,7 @@
                       class="w-full h-full overflow-y-auto overscroll-y-auto scroll"
                     >
                       <ul
-                        class="w-full h-full px-6 mt-5 flex flex-col gap-6 py-8"
+                        class="w-full h-full px-3 mt-5 flex flex-col gap-6 py-8"
                       >
                         <li class="bg-white">
                           <a href="#none" class="w-full">
@@ -2795,12 +3097,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   마이크로체인 거버넌스 토큰
                                 </p>
 
-                                <div class="text-base font-medium">MCG/KRW</div>
+                                <div class="text-xs font-medium">MCG/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -2827,14 +3129,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   슈퍼팜
                                 </p>
 
-                                <div class="text-base font-medium">
-                                  SUPER/KRW
-                                </div>
+                                <div class="text-xs font-medium">SUPER/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -2861,12 +3161,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   파렉스
                                 </p>
 
-                                <div class="text-base font-medium">PRX/KRW</div>
+                                <div class="text-xs font-medium">PRX/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -2893,14 +3193,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   알라바바코인
                                 </p>
 
-                                <div class="text-base font-medium">
-                                  ABBC/KRW
-                                </div>
+                                <div class="text-xs font-medium">ABBC/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -2927,12 +3225,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   테라코인
                                 </p>
 
-                                <div class="text-base font-medium">TRR/KRW</div>
+                                <div class="text-xs font-medium">TRR/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -2959,14 +3257,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   밴드 프로토콜
                                 </p>
 
-                                <div class="text-base font-medium">
-                                  BAND/KRW
-                                </div>
+                                <div class="text-xs font-medium">BAND/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -2993,12 +3289,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   마이크로체인 거버넌스 토큰
                                 </p>
 
-                                <div class="text-base font-medium">MCG/KRW</div>
+                                <div class="text-xs font-medium">MCG/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -3025,12 +3321,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   마이크로체인 거버넌스 토큰
                                 </p>
 
-                                <div class="text-base font-medium">MCG/KRW</div>
+                                <div class="text-xs font-medium">MCG/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -3057,12 +3353,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   마이크로체인 거버넌스 토큰
                                 </p>
 
-                                <div class="text-base font-medium">MCG/KRW</div>
+                                <div class="text-xs font-medium">MCG/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -3089,12 +3385,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   마이크로체인 거버넌스 토큰
                                 </p>
 
-                                <div class="text-base font-medium">MCG/KRW</div>
+                                <div class="text-xs font-medium">MCG/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -3121,12 +3417,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   마이크로체인 거버넌스 토큰
                                 </p>
 
-                                <div class="text-base font-medium">MCG/KRW</div>
+                                <div class="text-xs font-medium">MCG/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -3153,12 +3449,12 @@
 
                               <div class="w-full ml-3">
                                 <p
-                                  class="text-start font-medium text-base tracking-tighter"
+                                  class="text-start font-medium text-xs tracking-tighter"
                                 >
                                   마이크로체인 거버넌스 토큰
                                 </p>
 
-                                <div class="text-base font-medium">MCG/KRW</div>
+                                <div class="text-xs font-medium">MCG/KRW</div>
                               </div>
                               <div class="w-fit">
                                 <div
@@ -3179,8 +3475,6 @@
           </div>
         </div>
       </section>
-
-      <section></section>
     </main>
 
     <footer class="mt-2 bg-white">
@@ -3242,7 +3536,7 @@
                   <img
                     src="./assets/images/others/googleplaystore.png"
                     alt=""
-                    class="w-52"
+                    class="w-40"
                   />
                 </a>
               </div>
@@ -3251,7 +3545,7 @@
                   <img
                     src="./assets/images/others/appstore.png"
                     alt=""
-                    class="w-52"
+                    class="w-40"
                   />
                 </a>
               </div>
